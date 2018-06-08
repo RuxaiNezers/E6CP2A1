@@ -10,4 +10,34 @@
 #    invertir el orden de los elementos en un arreglo.
 
 arra = [1,2,3,9,1,4,5,2,3,6,6]
+invr = []
+arra.pop
 
+arra.shift
+
+cont = arra.count
+
+if cont.even?
+	media=(cont/2)
+	arra.delete_at(media-1)	
+else
+	media=(cont/2)
+	arra.delete_at(media)	
+end
+
+while arra.last!=1 
+	arra.pop
+end
+
+puts arra
+
+puts invr
+
+loop do 	
+	invr.push(arra.last)
+	arra.pop
+	break if arra.last==nil
+end
+
+puts arra
+puts invr
