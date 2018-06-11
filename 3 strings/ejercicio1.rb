@@ -5,3 +5,9 @@
 
 cadena = 'Hola Mundo!'
 caracter = 'o'
+
+def busqueda(frase, cara)
+	frase.include?(cara)
+end
+
+print busqueda(cadena, caracter)
