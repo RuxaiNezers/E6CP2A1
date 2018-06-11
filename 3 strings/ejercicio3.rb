@@ -6,3 +6,21 @@
 
 a = [1, 2, 3, 9, 12, 31, 'domingo']
 b = %w[lunes martes miércoles jueves viernes sábado domingo]
+
+def metodo1(arr1, arr2)
+	c = arr1.concat(arr2)
+end
+
+def metodo2(arr1, arr2)
+	d = arr1.concat(arr2).uniq
+end
+
+def metodo3(arr1, arr2)
+	arr2 & arr1
+end
+
+puts metodo1(a, b)
+puts ""
+puts metodo2(a, b)
+puts ""
+puts metodo3(a, b)
